@@ -1,21 +1,11 @@
 <?php
-/*******************************************************************************
- * Created by: shlomo hassid.
- * Release Version : 3.0
- * Creation Date: 14/08/2013
- * Updated To V.2.X : 05/01/2014
- * Updated To V.3.0 : 14/08/2014
- * Mail: Shlomohassid@gmail.com
- * require: jquery latest ( best: 10.1 ) version SQL 4+ PHP 5.3+ .	
- * Copyright 2014, shlomo hassid.
-*******************************************************************************/
     error_reporting(0);
     @ini_set('display_errors', 'off');   
     define('DS', DIRECTORY_SEPARATOR);
 /*******************************   DEFINE   ***********************************/
 
 //Weeks interval => older then [1, 2, 3, 4] weeks  
-$intervalweeks = 2;
+$intervalweeks = 1;
 
 //Write to log?
 $write_to_log = true; 

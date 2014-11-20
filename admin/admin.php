@@ -1,15 +1,4 @@
 <?php
-/*******************************************************************************
- * Created by: shlomo hassid.
- * Release Version : 3.0
- * Creation Date: 14/08/2013
- * Updated To V.2.X : 05/01/2014
- * Updated To V.3.0 : 14/08/2014
- * Mail: Shlomohassid@gmail.com
- * require: jquery latest ( best: 10.1 ) version SQL 4+ PHP 5.3+ .	
- * Copyright 2014, shlomo hassid.
-*******************************************************************************/
-/**************************** REQUIRD CORE FILES ******************************/
     error_reporting(0);
     @ini_set('display_errors', 'off');
     session_start();
@@ -94,12 +83,12 @@
     
     <!-- Import CSS -->
     <link rel="stylesheet" href="../js/dist/jquery.jqplot.css" type="text/css" />        
-    <link href='http://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/admin.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="js/jqueryui/jquery-ui.structure.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="js/jqueryui/jquery-ui.theme.min.css" type="text/css" media="screen" />
     <!-- Import JS -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../js/jquery.browser.min.js"></script>
     <script type="text/javascript"> 
         //typography (edit in lang.php):

@@ -9,12 +9,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><?php echo $brand.$lang[$lang['set']]['type_title_join_to_brand']; ?></title>
     <!-- INCLUDE - JS -->
-    <script language="javascript" src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script language="javascript" src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script language="javascript" src="js/jquery.browser.min.js" type="text/javascript"></script>	
     <script language="javascript" src="js/mainjs.js" type="text/javascript"></script>
     <!-- INCLUDE STYLE-SHEETS -->
-    <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" /> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/buttons.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/<?php echo $themeUse; ?>.css" type="text/css" media="screen" />
     <?php
@@ -38,33 +37,33 @@
 </head>
 <body>
 <?php include_once("analyticstracking.php") ?>
-<form method="post" action="code/client/filesend.php" enctype="multipart/form-data" id='takethatform'>
-<input type='hidden' name='modeEQ' id='modeEQ' value='<?php echo $users_mode; ?>' />
-<?php echo gettokenfield(); ?>
-<div class="outerContainer"  grab="top2-" >
-<table border='0'>
-    <tr>
-        <td colspan='3'>
-            <div class='logoTakeThat'><a href='index.php'><img src='img/takethatlogo.png' style="border:0" /></a></div>
-            <div class='logoBrand'><span class='Brand' id='Brand'><?php echo $brand; ?></span></div>
-        </td>
-    </tr>
-    <tr>
-        <td colspan='3'><div class='border_div'></div></td>
-    </tr>
 <?php
     //Add Banner / Code if needed:
     if ( $guests === '1' ) {
-        if ( $adsense_downpage == '1' ) {
+        if ( $adsense_mainpage == '1' ) {
             //Include adsense or any other script / code:
             include('ads_parse_code.php');
-        } 
-        elseif ( $banner_downpage == '1' ) {
+        } else {
             //Include banners:
             include('ads_parse_banner.php');
         }
     }
-    
+?>
+<form method="post" action="code/client/filesend.php" enctype="multipart/form-data" id='takethatform'>
+<input type='hidden' name='modeEQ' id='modeEQ' value='<?php echo $users_mode; ?>' />
+<?php echo gettokenfield(); ?>
+<div class="outerContainer"  grab="top2-" >
+	<div class="upperContent" >
+					<div class="upperlogo" >
+						<a href="index.php"><img src="img/ladybug-logo.png"></a>
+					</div>
+					<h2>Someone has shared <br/>this file with you:</h2>
+	</div>
+<table border='0'>
+    <tr>
+        <td colspan='3'><div class='border_div'></div></td>
+    </tr>
+<?php
     //Download pannel
     //Prepare link:
     if ( isset($_GET['get']) ) {

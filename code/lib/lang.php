@@ -1,15 +1,4 @@
 <?php
-/******************************************************************************/
-// Created by: shlomo hassid.
-// Release Version : 3.0
-// Creation Date: 14/08/2013
-// Updated To V.2.X : 05/01/2014
-// Updated To V.3.0 : 14/08/2014
-// Mail: Shlomohassid@gmail.com
-// require: jquery latest ( best: 10.1 ) version SQL 4+ PHP 5.3+ .	
-// Copyright 2014, shlomo hassid.
-/******************************************************************************/
-/*************************** Typography & text  *******************************/
 
 //Set Language
 $lang['set'] = "en";
@@ -26,9 +15,9 @@ $lang['en']  = array();
     $lang['en']['type_title_join_to_brand']         = " - File Sharing system ";
     $lang['en']['type_sofar_counter']               = "Files delivered so far: ";
     $lang['en']['type_file_sec_title_single']       = "File:";
-    $lang['en']['type_file_sec_title_multi']        = "File/s:";
+    $lang['en']['type_file_sec_title_multi']        = "File(s):";
     $lang['en']['type_recipient_sec_title_single']  = "Recipient:";
-    $lang['en']['type_recipient_sec_title_multi']   = "Recipient/s:";
+    $lang['en']['type_recipient_sec_title_multi']   = "Recipient(s):";
     $lang['en']['type_from_sec_title']              = "From:";
     $lang['en']['type_browse_button']               = "Browse";
     $lang['en']['type_file_field_placeholder']      = "select a file";
@@ -64,7 +53,7 @@ $lang['en']  = array();
     $lang['en']['validation_unauthorized_file_type']= "Unauthorized file type.";
     $lang['en']['validation_unauthorized_file_size']= "File size exceeded the maximum size permitted.";
     $lang['en']['validation_human_detection_behavior'] = "You are missing something please take a second look.";
-    $lang['en']['validation_file_sent_done']        = "File/s sent successfully!";
+    $lang['en']['validation_file_sent_done']        = "File(s) sent successfully!";
     $lang['en']['validation_server_file_cant_send1']= "File number "; //File number will be added.
     $lang['en']['validation_server_file_cant_send2']= " could not be sent.";
     $lang['en']['validation_server_rec_not_send1']  = "Recipient number "; //Recipient number will be added.
@@ -89,7 +78,7 @@ $lang['en']  = array();
     
 //en - Download page:
     $lang['en']['type_file_size_download']          = "Size:";
-    $lang['en']['type_home_button']                 = "Home";
-    $lang['en']['type_file_downloaded_not_ava']     = "The requested file\s is not available.";
+    $lang['en']['type_home_button']                 = "Email your files";
+    $lang['en']['type_file_downloaded_not_ava']     = "The requested file is not available.";
     $lang['en']['type_file_downloaded_notify_subject'] = "Your file has been downloaded.";
     $lang['en']['type_file_downloaded_notify_subject'] = "Your file has been downloaded.";

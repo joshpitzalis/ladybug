@@ -438,7 +438,7 @@ a.force_flash {
 .effect6
 {
     position:fixed;       
-    z-index: -999;
+    z-index: 0;
 }
 .effect6:before, .effect6:after
 {

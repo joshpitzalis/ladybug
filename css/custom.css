@@ -1,7 +1,7 @@
 body {
     color:#2E2E2E;
     font-size:16px;
-    background-color:#FFFFFF;
+    background-color:#F6F6F6;
     font-family:  'Open Sans', Helvetica, Arial, sans-serif;
     margin:0;
 }
@@ -29,7 +29,7 @@ div.outerContainer {
 }
 div.outerContainer table {
     width:100%;
-    max-width:260px;
+    max-width:310px;
     border:0;
     padding:20px;
 }
@@ -45,7 +45,7 @@ div.lowerContainer {
 	border-radius: 4px;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	max-width: 270px;
+	max-width: 290px;
 	width: 100%;
 	margin-top: -20px;
 	position: relative;
@@ -66,6 +66,13 @@ div.infoContainer {
 div.lowerContent {
     width:100%;
     max-width:250px;
+    border:0;
+    padding: 20px 20px 5px 10px;
+    text-align: center;
+}
+div.upperContent {
+    width:100%;
+    max-width:240px;
     border:0;
     padding: 20px 20px 5px 10px;
     text-align: center;
@@ -96,7 +103,18 @@ div.lowerlogo img {
 	position: relative;
 	top: -3px;
 }
+div.upperlogo img {
+	max-width: 50px;
+	float: none;
+	position: relative;
+	top: -3px;
+}
 div.lowerContent h2 {
+	font-size: 0.8em;
+	text-align: center;
+	color: #CB6868;
+}
+div.upperContent h2 {
 	font-size: 0.8em;
 	text-align: center;
 	color: #CB6868;
@@ -280,7 +298,7 @@ a.link_tofile:active{
     transition: 0.2s;
 }
 a.link_tofile:hover{
-    color:#2E64FE;
+    color:#CB6868;
 }
 ul.links_group{
     padding:5px;
@@ -390,10 +408,13 @@ a.loginbutton {
     font-size:1em;
 }
 .banner_style_mainpage {
-    width:100%;
-    height:auto;
-    margin:0;
-    padding:0;
+    position: fixed; 
+	top: 0; 
+	left: 0; 
+	
+	/* Preserve aspect ratio */
+	min-width: 100%;
+	min-height: 100%;
 }
 div.wrapper_banner_click {
     position:relative;
@@ -468,11 +489,11 @@ input[type="password"],
  }
  
  #fromsend {
- 	width: 90%;
+ 	width: 88%;
  }
 
 .recipients {
-     width: 90%;
+     width: 88%;
  }
  
  ::-webkit-input-placeholder {
@@ -585,6 +606,10 @@ a.hoverfile.button.facebook {
 	line-height: 1em;
 }
 
+#but1home {
+	margin-top: 10px;
+}
+
 /* FOR SMALLER WIDTHS */
 @media screen and (max-device-width : 900px) and (min-device-width : 480px){
 	.banner_style_mainpage {
@@ -619,6 +644,12 @@ a.hoverfile.button.facebook {
 		max-width: 100%;
 	}
 	div.lowerContent {
+		width: auto;
+		max-width: 100%;
+		border: 0;
+		padding: 20px;
+	}
+	div.upperContent {
 		width: auto;
 		max-width: 100%;
 		border: 0;
@@ -728,7 +759,13 @@ a.hoverfile.button.facebook {
         margin: 0;
         padding: 0;
         text-align:center;
-        top: 50%;
+        top: 60%;
+        
+		position: fixed; 	
+		/* Preserve aspect ratio */
+		min-width: inherit;
+		min-height: inherit;
+		background: #F6F6F6;
     }    
     a.hoverfile.button.facebook {
 		height: 63px;
@@ -737,6 +774,9 @@ a.hoverfile.button.facebook {
 	div.lowerlogo img {
 		max-width: 80px;
 	}   
+	div.upperlogo img {
+		max-width: 120px;
+	}
 	div.lowerText {
 		max-width: 100%;
 		font-size: 1.3em;
@@ -744,5 +784,10 @@ a.hoverfile.button.facebook {
 	div.lowerContent h2 {
 		position: relative;
 		left: -30px;
+	}
+	div.upperContent h2 {
+		position: relative;
+		left: -30px;
+		font-size: 1.2em;
 	}
 }

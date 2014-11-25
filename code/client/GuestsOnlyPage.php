@@ -253,7 +253,7 @@
 			</div>
 		</div>
 		<div class="lowerText" >
-			<a href="index.php">Learn More</a>
+			<a href="/about/">Learn More</a>
 		</div>
 	</div>
 </body>

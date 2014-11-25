@@ -57,7 +57,7 @@
 					<div class="upperlogo" >
 						<a href="index.php"><img src="img/ladybug-logo.png"></a>
 					</div>
-					<h2>Someone has shared <br/>this file with you:</h2>
+					<h2>Someone has shared this file with you:</h2>
 	</div>
 <table border='0'>
     <tr>

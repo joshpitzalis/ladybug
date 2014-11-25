@@ -72,7 +72,7 @@ div.lowerContent {
 }
 div.upperContent {
     width:100%;
-    max-width:240px;
+    max-width:290px;
     border:0;
     padding: 20px 20px 5px 10px;
     text-align: center;
@@ -84,6 +84,7 @@ div.lowerText {
 	font-size: 0.7em;
 	padding-top: 5px;
 	text-decoration: none;
+	position: relative;
 }
 div.lowerText a {
 	text-decoration: none;

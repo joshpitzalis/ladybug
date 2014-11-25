@@ -36,6 +36,7 @@
     </script>
     <script language="javascript" src="js/mainjs.js" type="text/javascript"></script>  
     <!-- INCLUDE STYLE-SHEETS -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/buttons.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/<?php echo $themeUse; ?>.css" type="text/css" media="screen" />

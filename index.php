@@ -93,7 +93,7 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 							else :
 							?>
 								<div class="main" id="downloadDiv">
-									<img src="src/images/logo.png" class="logo" alt="Logo"><hr>
+									<a href="index.php"><img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"></a><hr>
 									<div style="width: 70%; margin-left: auto; margin-right: auto;" id="downloadForm">
 										<form id="downloadItems" action="src/action.php" method="post">
 											<input type="hidden" name="action" id="action" value="download">
@@ -185,7 +185,7 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 				<div class="bounceInLeft animated">
 					<!-- Normal view div -->
 					<div class="main" id="uploadDiv">			
-						<img src="src/images/logo.png" class="logo" alt="Logo">
+						<a href="index.php"><img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"></a>
 						<hr>
 						<div class="FormContent">
 							<div class="upload_section">

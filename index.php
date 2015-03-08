@@ -64,7 +64,7 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 							if($rows['password'] != 'EMPTY') :
 							?>				
 								<div class="main" id="downloadDiv">
-									<img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"><hr>
+									<a href="index.php"><img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"></a><hr>
 									<div style="width: 70%; margin-left: auto; margin-right: auto; text-align:center;">
 										<div id="downloadLogo"><i class="fa fa-lock fa-5x" style="padding-top: 35px;"></i></div>
 										<p id="statusDownload" style="padding-top: 30px;"><?php echo $text['fill_password']; ?>:</p>

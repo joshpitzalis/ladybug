@@ -1,0 +1,112 @@
+@import url("animate.css");
+@import url("bootstrap/social_icons.css");
+
+.main {
+	background-color: #FFF;
+	height: 500px;
+	width: 350px;
+	border-radius: 9px;
+  float: left;
+  position: relative;
+}
+.social {
+  width: 50px;
+  float: left;
+  padding-top: 30px;
+}
+.logo {
+	display:block;
+	margin:auto;
+  padding-top: 10px;
+}
+.MainOuter {
+	display: table;
+	position: absolute;
+	height: 100%;
+	margin-left: 60px;
+}
+.MainMiddle {
+	display: table-cell;
+	vertical-align: middle;
+}
+.MainContent {
+	margin-left: auto;
+	margin-right: auto;
+  width: 400px; 
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[disabled] {
+  background-color: white !important;
+  cursor: text !important;
+}
+.buttonSection {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.uploadSettings {
+  margin-top: 20px;
+  background-color: #FFF;
+  height: 145px;
+  width: 350px;
+  border-radius: 9px;
+  float: left;
+  position: relative;
+}
+.advertisement {
+  margin-top: 20px;
+  background-color: #FFF;
+  height: 145px;
+  width: 350px;
+  border-radius: 9px;
+  float: left;
+  position: relative;
+}
+.settingsContent {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.FormContent {
+	width: 90%;
+	margin: 0 auto;
+}
+.EmailToSection {
+  width: 100%;
+  height: 90px; 
+  overflow: auto;
+}
+.progressround {          
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -130px 0 0 -125px;
+}
+.progresssuccess { 
+  width: 250px;       
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -220px 0 0 -125px;
+}
+.td_2 { 
+  padding-left: 20px;
+}

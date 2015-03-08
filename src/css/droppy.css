@@ -138,3 +138,15 @@ input[disabled] {
   background-color: #5dade2;
   border-color: #5dade2;
 }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+}

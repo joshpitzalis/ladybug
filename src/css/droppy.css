@@ -8,6 +8,7 @@
 	border-radius: 9px;
   float: left;
   position: relative;
+  z-index: 9;
 }
 .main hr {
 	margin-top: 10px;
@@ -16,6 +17,7 @@
   width: 50px;
   float: left;
   padding-top: 30px;
+  margin-left: -5px;
 }
 .logo {
 	display:block;

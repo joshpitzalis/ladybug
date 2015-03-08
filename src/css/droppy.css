@@ -157,3 +157,9 @@ input[disabled] {
   border-color: #bdc3c7;
 }
 
+.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active, .open .dropdown-toggle.btn-facebook {
+  color: #fff;
+  background-color: #cacfd2;
+  border-color: #cacfd2;
+}
+

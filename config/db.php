@@ -8,28 +8,28 @@ $mysql = array(
 	| Your MySql host address Eg: example.com or you can use localhost
 	|----------------------------------------------------------------------
 	*/
-	"host" => "#db_host#",
+	"host" => "ladbug25.useladybug.com",
 	
 	/*
 	|----------------------------------------------------------------------
 	| Your MySql username to login to your MySql database
 	|----------------------------------------------------------------------
 	*/
-	"user" => "#db_user#",
+	"user" => "ladybugdb",
 	
 	/*
 	|----------------------------------------------------------------------
 	| Your MySql password to login to your MySql database
 	|----------------------------------------------------------------------
 	*/
-	"pass" => "#db_pass#", 
+	"pass" => "My9wUe5twyn", 
 	
 	/*
 	|----------------------------------------------------------------------
 	| Your MySql database (You need to create a database by hand the installation only creates tables IN the database)
 	|----------------------------------------------------------------------
 	*/
-	"db" => "#db_name#",
+	"db" => "ladybug25",
 );
 
 /*

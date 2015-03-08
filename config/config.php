@@ -13,7 +13,7 @@ error_reporting(0);
 include 'db.php';
 
 //Name on zip file (Eg: droppy-EgUA8FA)
-$name_on_file = 'droppy';
+$name_on_file = 'ladybug';
 
 //Delete data in the upload table older then 1 month
 $delete_old_data = 'YES';

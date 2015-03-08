@@ -9,6 +9,9 @@
   float: left;
   position: relative;
 }
+.main hr {
+	margin-top: 10px;
+}
 .social {
   width: 50px;
   float: left;

@@ -1,9 +1,4 @@
 <?php
-/*
-Name: Droppy - Online file sharing
-Author: Proxibolt
-File: index.php
-*/
 
 //Inlcude translation file
 include 'config/config.php';
@@ -22,7 +17,6 @@ error_reporting(0);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo $site_desc; ?>">
-    <meta name="author" content="Proxibolt">
 
     <title><?php echo $site_title; ?></title>
 	
@@ -241,7 +235,7 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 						<?php
 						if(!empty($social_facebook)) :
 						?>
-						<a href="<?php echo $social_facebook; ?>" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-facebook"></i></a>
+						<a href="<?php echo $social_facebook; ?>" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-question-circle"></i></a>
 						<?php
 						endif;
 						if(!empty($social_twitter)) :

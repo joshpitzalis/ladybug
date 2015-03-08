@@ -293,7 +293,7 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 							<div style="bottom: 0; float: left; clear: both;">
   								<span class="button-checkbox">
 							        <button type="button" class="btn btn-sm" data-color="primary"><?php echo $text['enable_destuct']; ?></button>
-							        <input type="checkbox" class="hidden" name="destruct" value="yes" />
+							        <input type="checkbox" class="hidden" name="destruct" value="yes" checked />
 							    </span>
 							</div>
 							<div style="float: right; padding-top: 1px;">

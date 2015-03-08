@@ -3,4 +3,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d  
 RewriteRule ^(.*) index.php?download=$1 [L,QSA]
 
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://useladybug.com/$1 [R,L]
+
 Options All -Indexes
+

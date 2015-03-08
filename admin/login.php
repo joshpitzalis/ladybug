@@ -9,7 +9,6 @@ require '../config/config.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Admin login">
-    <meta name="author" content="Proxibolt">
     <meta name="keyword" content="">
 
     <title><?php echo $site_name; ?> | Login</title>

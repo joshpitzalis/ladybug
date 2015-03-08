@@ -339,9 +339,13 @@ $get_info = $mysqli->query("SELECT * FROM $table_uploads WHERE upload_id='$downl
 				</div>
 				<!-- End progress and succes div -->
 				<div class="social" id="uploadingDivSocial" style="display: none;">
-					<a href="http://twitter.com" class="btn btn-social-icon btn-twitter btn-lg"><i class="fa fa-twitter"></i></a>
-					<a href="http://tumblr.com" class="btn btn-social-icon btn-tumblr btn-lg"><i class="fa fa-tumblr"></i></a>
-					<a href="http://facebook.nl" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-facebook"></i></a>
+					<?php
+					if(!empty($social_facebook)) :
+					?>
+					<a href="<?php echo $social_facebook; ?>" class="btn btn-social-icon btn-facebook btn-lg"><i class="fa fa-question-circle"></i></a>
+					<?php
+					endif;
+					?>
 				</div>
 				<?php
 				endif;

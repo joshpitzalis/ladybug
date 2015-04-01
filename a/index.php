@@ -1,9 +1,4 @@
 <?php
-/*
-Name: Droppy - Online file sharing
-Author: Proxibolt
-File: index.php
-*/
 
 //Inlcude translation file
 include 'config/config.php';

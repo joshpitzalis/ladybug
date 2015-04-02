@@ -1,9 +1,4 @@
 <?php
-/*
-Name: Droppy - Online file sharing
-Author: Proxibolt
-File: action.php
-*/
 
 //Turning off error reporting
 error_reporting(0);

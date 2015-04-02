@@ -512,7 +512,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 								</div>
 								<div style="bottom: 0; float: left; clear: both;">
 	  								<span class="button-checkbox">
-								        <button type="button" class="btn btn-sm" data-color="primary"><?php echo $text['enable_destuct']; ?></button>
+								        <button type="button" class="btn btn-sm" data-color="primary"><?php echo $text['enable_destruct']; ?></button>
 								        <input type="checkbox" class="hidden" name="destruct" value="yes" checked />
 								    </span>
 								</div>

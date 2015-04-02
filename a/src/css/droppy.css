@@ -22,7 +22,9 @@
 .logo {
 	display:block;
 	margin:auto;
-  padding-top: 10px;
+    padding-top: 10px;
+    padding-top: 10px;
+    max-width: 200px;
 }
 .MainOuter {
 	display: table;

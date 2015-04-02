@@ -121,7 +121,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 										</div>
 										<!-- End social buttons div -->
 										<div class="main" id="downloadDiv">
-											<img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"><hr>
+											<a href="https://useladybug.com" target="_blank"><img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"></a><hr>
 											<div style="width: 70%; margin-left: auto; margin-right: auto; text-align:center;" id="downloadForm">
 												<div id="downloadLogo"><i class="fa fa-lock fa-5x" style="padding-top: 35px;"></i></div>
 												<p id="statusDownload" style="padding-top: 30px;"><?php echo $text['fill_password']; ?>:</p>

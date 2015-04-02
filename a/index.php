@@ -576,7 +576,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 					?>
 				</div>
 				<!-- Progress and succes div -->
-				<div class="main" id="uploadingDiv" style="display: none;">
+				<div class="main" id="uploadingDiv" style="display: none; height: 500px;">
 					<div id="uploadProcess" class="progressround">			
 						<input type="text" value="" class="progressCircle" id="progresscircle">
 						<div id="progressMb" style="padding-top: 20px;"></div>

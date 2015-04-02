@@ -134,3 +134,18 @@ input[disabled] {
 #termsDiv {
   text-align: center;
 }
+
+/* Hack for OS X */
+@media (max-width: 480px) {
+  body {
+	background: none!important;
+  }
+  
+  .MainMiddle {
+  }
+  
+  .MainOuter {
+	  margin-left: -35px;
+  }
+  
+}

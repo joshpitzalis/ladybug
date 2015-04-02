@@ -121,7 +121,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 										</div>
 										<!-- End social buttons div -->
 										<div class="main" id="downloadDiv">
-											<a href="https://useladybug.com" target="_blank"><img src="<?php echo $logo_path; ?>" class="logo" alt="Logo"></a><hr>
+											<a href="https://useladybug.com" target="_blank"><img src="<?php echo $logo_path; ?>" class="logo" alt="Ladybug"></a><hr>
 											<div style="width: 70%; margin-left: auto; margin-right: auto; text-align:center;" id="downloadForm">
 												<div id="downloadLogo"><i class="fa fa-lock fa-5x" style="padding-top: 35px;"></i></div>
 												<p id="statusDownload" style="padding-top: 30px;"><?php echo $text['fill_password']; ?>:</p>
@@ -202,7 +202,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 										<!-- End social buttons div -->
 
 										<div class="main" id="downloadDiv">
-											<img src="src/images/logo.png" class="logo" alt="Logo"><hr>
+											<a href="https://useladybug.com" target="_blank"><img src="src/images/logo.png" class="logo" alt="Ladybug"></a><hr>
 											<div style="width: 70%; margin-left: auto; margin-right: auto;" id="downloadForm">
 												<form id="downloadItems" action="src/action.php" method="post">
 													<input type="hidden" name="action" id="action" value="download">
@@ -438,7 +438,7 @@ $get_downloads = $mysqli->query("SELECT * FROM $table_downloads WHERE download_i
 						<!-- End social buttons div -->
 						<!-- Normal view div -->
 						<div class="main" id="uploadDiv">			
-							<img src="src/images/logo.png" class="logo" alt="Logo">
+							<a href="https://useladybug.com" target="_blank"><img src="src/images/logo.png" class="logo" alt="Ladybug"></a>
 							<hr>
 							<div class="FormContent">
 								<div class="upload_section">

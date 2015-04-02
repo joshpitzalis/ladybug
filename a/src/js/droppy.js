@@ -125,7 +125,7 @@ $('body').on('click', '#submit_upload', function(e){
 					if(res.upload_type == 'link') {
 						uploadComplete();
 						document.getElementById('linkMessage').style.display = "block";
-						document.getElementById('downloadLink').innerHTML = '<a href="' + siteUrl + res.upload_id + '">'  + siteUrl + res.upload_id + '</a>';
+						document.getElementById('downloadLink').innerHTML = '<a href="' + siteUrl + res.upload_id + '" target="_blank">'  + siteUrl + res.upload_id + '</a>';
 					}
 				},				
 			    data: form,

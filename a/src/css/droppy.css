@@ -23,13 +23,12 @@
 	display:block;
 	margin:auto;
     padding-top: 10px;
-    padding-top: 10px;
     max-width: 160px;
 }
 
 hr {
   margin-top: 0px;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   border: 0;
   border-top: 0px solid;
 }

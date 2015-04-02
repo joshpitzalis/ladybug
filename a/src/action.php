@@ -110,7 +110,7 @@ switch ($_POST['action']) {
 						     
 						    $mail->MsgHTML($body);
 						     
-						    $mail->AddAddress($rows['email_from'], 'Droppy User');
+						    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 						    if(!$mail->Send()) {
 						        //Error
@@ -161,7 +161,7 @@ switch ($_POST['action']) {
 								     
 								    $mail->MsgHTML($body);
 								     
-								    $mail->AddAddress($rows['email_from'], 'Droppy User');
+								    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 								    if(!$mail->Send()) {
 								        //Error
@@ -245,7 +245,7 @@ switch ($_POST['action']) {
 							     
 							    $mail->MsgHTML($body);
 							     
-							    $mail->AddAddress($rows['email_from'], 'Droppy User');
+							    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 							    if(!$mail->Send()) {
 							        //Error
@@ -302,7 +302,7 @@ switch ($_POST['action']) {
 									     
 									    $mail->MsgHTML($body);
 									     
-									    $mail->AddAddress($rows['email_from'], 'Droppy User');
+									    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 									    if(!$mail->Send()) {
 									        //Error
@@ -403,7 +403,7 @@ switch ($_POST['action']) {
 					     
 					    $mail->MsgHTML($body);
 					     
-					    $mail->AddAddress($rows['email_from'], 'Droppy User');
+					    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 					    if(!$mail->Send()) {
 					        //Error
@@ -463,7 +463,7 @@ switch ($_POST['action']) {
 							     
 							    $mail->MsgHTML($body);
 							     
-							    $mail->AddAddress($rows['email_from'], 'Droppy User');
+							    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 							    if(!$mail->Send()) {
 							        //Error
@@ -537,7 +537,7 @@ switch ($_POST['action']) {
 						     
 						    $mail->MsgHTML($body);
 						     
-						    $mail->AddAddress($rows['email_from'], 'Droppy User');
+						    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 						    if(!$mail->Send()) {
 						        //Error
@@ -594,7 +594,7 @@ switch ($_POST['action']) {
 								     
 								    $mail->MsgHTML($body);
 								     
-								    $mail->AddAddress($rows['email_from'], 'Droppy User');
+								    $mail->AddAddress($rows['email_from'], 'Ladybug User');
 
 								    if(!$mail->Send()) {
 								        //Error

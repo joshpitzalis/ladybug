@@ -18,8 +18,6 @@ if(!isset($_SESSION['droppy_admin'])) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Droppy - Admin panel">
-    <meta name="author" content="Proxibolt">
     <meta name="keyword" content="">
 
     <title><?php echo $site_name; ?> - Admin Panel</title>

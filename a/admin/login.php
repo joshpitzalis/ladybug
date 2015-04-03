@@ -8,8 +8,6 @@ include '../config/config.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Admin login">
-    <meta name="author" content="Proxibolt">
     <meta name="keyword" content="">
 
     <title><?php echo $site_name; ?> | Login</title>
@@ -94,7 +92,7 @@ include '../config/config.php';
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="../src/js/admin/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("../src/images/bg-admin.jpg", {speed: 500});
+        $.backstretch("../src/images/bg_install.jpg", {speed: 500});
     </script>
 
 

@@ -1,4 +1,5 @@
-<?php
+<?php 
+require_once("iprotect/class.core.php");
 include '../config/config.php';
 
 //Turning off error reporting

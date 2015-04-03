@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Please enter your activation key</title>
+		
+		<link href="iprotect/assets/bootstrap.css" rel="stylesheet" type="text/css" />
+		
+		<style type="text/css">
+			.verticalAlign {
+				margin-top: 5%;
+			}
+			
+			.col-md-6 {
+				text-align: center
+			}
+			
+			label {
+				margin-top: 5px;
+				font-size: 20px
+			}
+			
+			.floatRight {
+				float: right
+			}
+			
+			#authAlert {
+				display: none;
+				text-align: center
+			}
+			
+			#authLoading {
+				display: none;
+				font-size: 24px;
+				-webkit-animation:spin 1s linear infinite;
+				-moz-animation:spin 1s linear infinite;
+				animation:spin 1s linear infinite;
+			}
+			
+			@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+			@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+			@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+		</style>
+	</head>
+	
+	<body>
+		<div class="container verticalAlign">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<div id="authAlert" class="alert alert-danger"></div>
+				</div>
+			</div>
+		
+			<div class="col-md-offset-2 col-md-8">
+				<div class="jumbotron">
+					<h1>Activation</h1>
+					<p>Please enter your activation key.</p>
+						<hr />
+					<div class="row">
+						<div class="col-md-3">
+							<label for="authPassword">Key</label>
+						</div>
+						<div class="col-md-8 col-md-offset-1">
+							<input id="authPassword" type="password" class="form-control" placeholder="1234-5678-ABCD-EFGH" />
+						</div>
+					</div>
+						<br />
+					<div class="row">
+						<div class="col-md-1"><i id="authLoading" class="glyphicon glyphicon-refresh"></i></div>
+						<div class="col-md-6 col-md-offset-5">
+							<a class="btn btn-success btn floatRight" id="authSubmit" />Activate</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#authSubmit").click(function () {
+				var mUsername = $("#authUsername").val();
+				var mPassword = $("#authPassword").val();
+				$("#authLoading").fadeIn();
+				$.ajax({
+					url: "iprotect/ajax.authentificate.php",
+					type: "POST",
+					dataType: "JSON",
+					data: { authUser: mUsername, authPass: mPassword },
+					success: function (jsonResponse) {
+						if(jsonResponse.isValid == true) {
+							$("body").fadeOut(1000, function () {
+								if(jsonResponse.redirectionUrl.toLowerCase() == "self")
+									location.reload();
+								else
+									top.location = jsonResponse.redirectionUrl;
+							});
+						}
+						else {
+							$("#authAlert").html(jsonResponse.isValid);
+							$("#authAlert").fadeIn();
+						}
+						$("#authLoading").fadeOut();
+					},
+					error: function () {
+						$("#authAlert").html("Please double check your activation key. Any problems, get in touch! (hi@usesushi.com)");
+						$("#authAlert").fadeIn();
+						$("#authLoading").fadeOut();
+					}
+				});
+			});
+		});
+	</script>
+</html>

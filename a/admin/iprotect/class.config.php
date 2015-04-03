@@ -63,7 +63,7 @@
 				#         USER ACCOUNTS FOR IPROTECT          #
 				###############################################
 				
-					$s->appendUser("", "U8E4-S110-MZ9E-DD84");
+					$s->appendUser("", "21)KSKhgnajB0-at2");
 					// $s->appendUser("anotheruser", "password");
 				
 				###############################################

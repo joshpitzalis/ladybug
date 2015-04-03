@@ -32,7 +32,7 @@
 				// This is the time in seconds how long a session after a successful authentification will be active
 				// Currently it's set to 300, that equals 5 minutes (300 / 60 = 5). If you want to increase or decrease it, feel free to change it! (You can also use a infinite amount like 99999999 which will make the session permanent active until he closes the site/browser :-)
 				// We recommended for a garantued security 300 seconds, if you think it's annoying to authentificate each 5 minutes, feel again free to change it! :-)
-				$s->mActiveTime = 1;
+				$s->mActiveTime = 99999999;
 			
 				// This is the main part now, adding user combinations to your iProtect system!
 				// 1) Copy this code and add it below the last $s->appendUser code: $s->appendUser("user", "pass");

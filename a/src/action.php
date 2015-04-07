@@ -76,9 +76,10 @@ switch ($_POST['action']) {
 				    header('Content-Transfer-Encoding: binary');
 				    header('Expires: 0');
 				    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+				    header("Cache-Control: public");
 				    header('Pragma: public');
-				    header('Content-Length: ' . $rows['size']);
-					ob_clean();
+				    header('Content-Length: ' . filesize($ziplocation));
+					ob_end_flush();
 					readfile($ziplocation);
 					
 					//Remove zip file
@@ -214,9 +215,10 @@ switch ($_POST['action']) {
 					    header('Content-Transfer-Encoding: binary');
 					    header('Expires: 0');
 					    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+					    header("Cache-Control: public");
 					    header('Pragma: public');
-					    header('Content-Length: ' . $rows['size']);
-						ob_clean();
+					    header('Content-Length: ' . filesize('../' . $upload_dir . $row['secret_code'] . '-' . $row['file']));
+						ob_end_flush();
 						readfile('../' . $upload_dir . $row['secret_code'] . '-' . $row['file']);
 
 						$check_download = $mysqli->query("SELECT * FROM $table_downloads WHERE download_id='$download_id' AND email='$download_email'");
@@ -369,9 +371,10 @@ switch ($_POST['action']) {
 			    header('Content-Transfer-Encoding: binary');
 			    header('Expires: 0');
 			    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+			    header("Cache-Control: public");
 			    header('Pragma: public');
-			    header('Content-Length: ' . $rows['size']);
-				ob_clean();
+			    header('Content-Length: ' . filesize($ziplocation));
+				ob_end_flush();
 				readfile($ziplocation);
 				
 				//Remove zip file
@@ -506,9 +509,10 @@ switch ($_POST['action']) {
 				    header('Content-Transfer-Encoding: binary');
 				    header('Expires: 0');
 				    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+				    header("Cache-Control: public");
 				    header('Pragma: public');
-				    header('Content-Length: ' . $rows['size']);
-					ob_clean();
+				    header('Content-Length: ' . filesize('../' . $upload_dir . $row['secret_code'] . '-' . $row['file']));
+					ob_end_flush();
 					readfile('../' . $upload_dir . $row['secret_code'] . '-' . $row['file']);
 
 					$check_download = $mysqli->query("SELECT * FROM $table_downloads WHERE download_id='$download_id' AND email='$download_email'");

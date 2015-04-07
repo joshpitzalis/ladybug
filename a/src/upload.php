@@ -89,7 +89,9 @@ if($total_illegal == 0) {
                     if ($_FILES['files']['error'][$f] == 0) {
                         if(!empty($_POST['email_to'])) {
                             foreach($_POST['email_to'] as $emails_to) {
-                                $mysqli->query("INSERT INTO $table_receivers (upload_id, email) VALUES ('$upload_id','$emails_to')");
+                                if($emails_to != '' || $emails_to != null) {
+                                   $mysqli->query("INSERT INTO $table_receivers (upload_id, email) VALUES ('$upload_id','$emails_to')");
+                                }
                                 $message_receiver = '
                                 <html xmlns="http://www.w3.org/1999/xhtml">
                                 <head>

@@ -223,4 +223,5 @@ $message_downloaded = '
 </html>';
 
 //Email to html message is located in the upload.php file (src/upload.php)
+$version = '1.0.5';
 ?>
